@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produto</title>
+</head>
+<body>
+    <style>
+        html,body{height: 100%; width: 100%; box-sizing: border-box;}
+        body{
+             background: url(spice.jpg) no-repeat;
+             background-size: cover; 
+             overflow-x: hidden;
+             margin: 0;
+        }
+        header{
+            width: 100%;
+            height: 40px;
+            background-color: darkred;
+           
+        }
+        .topghost{
+            height: 10px;
+        }
+        .leftghost{
+            width: 80px;
+        }
+        .um{
+            display: flex;
+        }
+        .foto{
+            background-color: rgb(177, 21, 21);
+            width: 350px;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 20px;
+            left
+        }
+        img{
+            width: 330px;
+            height:330px;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        .imagem{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    <header>
+        <div class="topghost"></div>
+        <div class="um">
+        <div class="leftghost"></div>
+        <label for="pesquisa">
+            <input type="search" placeholder="pesquisa" id="pesquisa" name="pesquisa" size="30" maxlength="50" height="15" >
+        </label>
+        </div>
+    </header>
+    <div class="container">
+        <div class="imagem">
+            <div class="foto"><img src="temperos.jpg" alt=""></div>
+        </div>
+        <div class="conteudo"></div>
+    </div>
+
+</body>
+</html>
