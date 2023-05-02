@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background: url(teste2.jpg) no-repeat;
+            background-size: cover;
+            margin: 0;
+            height: 90vh;
+            width: 100vw;
+            background-size: 100vw 100vh;
+            overflow-x: hidden;
+        }
+
+        .retangulo {
+            height: 280px;
+            width: 400px;
+            background-color: brown;
+            background-image: radial-gradient(circle at left top, rgb(23, 23, 25) 40px, transparent 0),
+                radial-gradient(circle at right top, rgb(26, 25, 30) 40px, transparent 0),
+                radial-gradient(circle at left bottom, rgb(23, 23, 25) 40px, transparent 0),
+                radial-gradient(circle at right bottom, rgb(28, 28, 32) 40px, transparent 0);
+            display: flex;
+            align-items: center;
+
+        }
+
+        .titulo {
+            display: flex;
+            justify-content: center;
+            color: #eaff00;
+            font-family: hatton;
+            font-size: 50px;
+            width: 100%;
+        }
+
+        .autenticacao {
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input {
+            height: 50px;
+            color: #690000;
+            background-color: #ffffff;
+            font-family: 'Arial Narrow Bold';
+            margin: none;
+            border-radius: 10px;
+        }
+
+        input::placeholder {
+            color: #3d0000;
+            font-family: 'Arial Narrow Bold';
+            border: none;
+            margin: none;
+        }
+
+        .ghost {
+            width: 100%;
+            height: 150px;
+        }
+
+        .submit {
+            color: #ffffff;
+            background-color: green;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+        }
+
+        .name {
+            display: flex;
+        }
+
+        .ver {
+            color: #ffffff;
+            background-color: #690000;
+            height: 55px;
+            display: inline !important;
+        }
+
+        .ghostum {
+            display: flex;
+        }
+
+        .ghostfilho {
+            width: 100px;
+        }
+
+        a {
+            /* background-color: brown; */
+            color: #ffffff;
+            /* width: 300px; */
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+
+    <div class="titulo">
+        <p>Login</p>
+    </div>
+    <div class="retangulo">
+        
+        <div class="autenticacao">
+            <!-- <div class="nomedeusuario"> -->
+                <!-- <label for="nomedeusuario"> -->
+                    <input type="name" placeholder="Nome de Usuário:" id="email" name="email" size="38" maxlength="50"
+                        height="15">
+                </label>
+            <!-- </div> -->
+            <br>
+            <div class="nome">
+                <label for="senha">
+                    <input type="password" placeholder="Senha" id="senha" name="senha" size="26" minlength="6"
+                        maxlength="16">
+                </label>
+                <button class="ver">ver senha</button>
+            </div>
+            <br>
+            <a href="#">Esqueceu sua senha?</a>
+            <br>
+            <!-- <div class="ghostum"> -->
+                <!-- <div class="ghostfilho"></div> -->
+
+                <button class="submit">Entrar</button>
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="ghost"></div>
+</body>
+
+</html>
