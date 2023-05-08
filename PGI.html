@@ -5,103 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mokup</title>
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-            background: url(unnamed_compressed.jpg) no-repeat;
-            background-size: cover;
-            width: 610px;
-            height: 1300;
-        }
-        header{
-            background-color: brown;
-            width: 100%;
-            height: 10%;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            position: fixed;
-            top: 0;
-        }
-        .top-buscar{
-            position: relative;
-            top: 15px;
-            left: 60px;
-        }
-        .btn-menu-top{
-            background: url(menu.png) no-repeat;
-            width: 45px;
-            height: 35px;
-            position: relative;
-            top: -33px;
-            left: -55px;
-        }
-        .btn-lupa-top{
-            background: url(http://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
-            width: 20px;
-            height: 22px;
-            border: 0;
-            position: relative;
-            top: -37px;
-            left: -40px;
-
-
-        }
-        .btn-x-top{
-           background: transparent;
-           font-size:larger;
-            position: relative;
-            top: -40px;
-            left: 215px;
-            margin: 0;
-            padding: 0;
-            border: 0;
-
-
-        }
-        .btn-texto{
-            background-color: white;
-            width: 300px;
-            height: 25px;
-            border: 2px solid black;
-            border-radius: 5px;
-            padding-left: 30PX ;
-        }
-        .t1{
-            border: 1px solid black;
-            border-radius: 10px;
-            width: 230px;
-            height: 130px;
-        }
-        .t2{
-            border: 1px solid black;
-            border-radius: 10px;
-            width: 230px;
-            height: 130px;
-        }
-        .t3{
-            border: 1px solid black;
-            border-radius: 10px;
-            width: 230px;
-            height: 130px;
-        }
-        .contairner{
-            position: relative;
-            padding: 15px;
-            max-width: 640px;
-            margin: 0 auto;
-            margin-top: 60px;
-        }
-   
-        .gallery{
-            display: flex;
-            flex-flow: row nowrap;
-            gap: 15px;
-           
-        }
-       
-    </style>
+    <link rel="stylesheet" href="mokup.css">
 </head>
 <body>
     <Header>
@@ -109,27 +13,27 @@
             <input class="btn-texto" type="text" placeholder="Buscar">
             <div>
                 <div>
-                <button class="btn-menu-top" type="menu"></button>
                 <button class="btn-lupa-top" type="submit"></button>
                 <button class="btn-x-top" type="reset">X</button>
             </div>
         </form>
     </Header>
-
-
-    <div class="contairner">
-        <button class="arrow-left control" aria-label="Previousi image">d</button>
-        <button class="arrow-rigth" aria-label="Next image">b</button>
-        <div class="gallery-wrapper">
-            <div class="gallery">
-                <a href="cidades.html"><img class="t1" src="t1.jpg" alt=""></a>
-                <a href="cidades.html"><img class="t2" src="t2.jpg" alt=""></a>
-                <a href="cidades.html"><img class="t3" src="t3.jpg" alt=""></a>
-            </div>
+    <div class="content">
+        <div class="slids">
+            <input type="radio" name="slid" id="slid1">
+            <input type="radio" name="slid" id="slid2">
+            <input type="radio" name="slid" id="slid3">
         </div>
-    </div>  
+
+        <div class="slid s1">
+            <img src="t1.png" alt="T1">
+        </div>
+        <div class="slid">
+            <img src="t2.png" alt="T2">
+        </div>
+        <div class="slid">
+            <img src="t3.png" alt="T3">
+        </div>
+    </div>
 </body>
 </html>
-
-
-
