@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mokup</title>
+    <script src="mokupjs.js"></script>
     <link rel="stylesheet" href="mokup.css">
 </head>
 <body>
@@ -18,22 +19,15 @@
             </div>
         </form>
     </Header>
-    <div class="content">
-        <div class="slids">
-            <input type="radio" name="slid" id="slid1">
-            <input type="radio" name="slid" id="slid2">
-            <input type="radio" name="slid" id="slid3">
-        </div>
 
-        <div class="slid s1">
-            <img src="t1.png" alt="T1">
-        </div>
-        <div class="slid">
-            <img src="t2.png" alt="T2">
-        </div>
-        <div class="slid">
-            <img src="t3.png" alt="T3">
-        </div>
-    </div>
+    <input type="radio" type = 'color' onchange="changeColor();" name="position" checked />
+        <input type="radio" type = 'color' onchange="changeColor();" name="position" />
+        <input type="radio" type = 'color' onchange="changeColor();" name="position" />
+        <main id="carousel">
+          <img src="t1.png" alt="" class="item">
+          <img src="t2.png" alt="" class="item">
+          <img src="t3.png" alt="" class="item">
+          <main>    
+
 </body>
 </html>
