@@ -6,14 +6,18 @@ html,body{
 body{
     padding: 0;
     margin: 0;
-    background-size: cover;
+    height: 600px;
     display: flex;
-    align-items: center;
+    display: grid;
+    justify-items: center;
     justify-content: center;
+    align-items: center;
     background: url(spice.jpg) no-repeat;
     background-size: cover;
     overflow-x: hidden;
-
+    margin-top: 80px;
+    grid-template-rows: 220px 20px;
+    grid-template-columns: 1fr 30px 30px 30px 1fr;
    
 }
 header{
@@ -25,6 +29,7 @@ header{
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 .top-buscar{
     position: relative;
@@ -60,9 +65,66 @@ header{
     padding-left: 35px ;
     padding-right: 35px;
 }
-.content{
-    height: 520px;
-    width: 935px;
-    border-radius: 20px;
+main#carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 600px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-}
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+  }
+  
+  img.item {
+    border-radius: 10px;
+    position: absolute;
+    width: 370px;
+    height: 200px;
+    background-color: coral;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.20s linear;
+    transform: rotateY(calc(-20deg * var(--r)))
+      translateX(calc(-200px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+  }
+  
+  img.item:nth-of-type(1) {
+    --offset: 1;
+  }
+  img.item:nth-of-type(2) {
+    --offset: 2;
+  }
+  img.item:nth-of-type(3) {
+    --offset: 3;
+  }
+  input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(1):checked ~ main#carousel {
+    --position: 1;
+  }
+
+  input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(2):checked ~ main#carousel {
+    --position: 2;
+  }
+  
+  input:nth-of-type(3) {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(3):checked ~ main#carousel {
+    --position: 3;
+  }
