@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokup</title>
+    <script src="Inicial.js"></script>
+    <link rel="stylesheet" href="Inicial.css">
+</head>
+
+<body>
+
+    <!-- ******************************** CABEÇALHO ******************************** -->
+
+    <header>
+        <a href="" class="logo"><img src="logo.png" width="40px" alt=""></a> <!-- LOGO -->
+        <form class="top-buscar" action=""> <!-- CAIXA DE TEXTO -->
+            <button class="btn-lupa-top" type="submit"><img src="lupa.png" alt="" width="20px"></button> <!-- LUPA -->
+            <input class="btn-texto" type="text" placeholder="Buscar"> <!-- TEXTO -->
+            <button class="btn-x-top" type="reset"><img src="x.png" alt="" width="15px"></button> <!-- X -->
+        </form>
+        <button onclick="filtrar()" class="filtro">
+            <img src="filtro.png" alt="" width="20px">
+            <p>filtrar</p>
+        </button>
+
+        <a href="" class="img-"><img src="bolsa.png" width="25px" alt=""></a> <!-- BOLSA -->
+        <a href="Autenticação.html" class="img--"><img src="user.png" width="23px" alt=""></a> <!-- USER -->
+        </div>
+    </header>
+
+    <div id="continentes">
+        <h3>Continentes:</h3>
+        <div class="class-filtro">
+            <a href="" alt="">
+                <p>África </p>
+            </a>
+            <a href="" alt="">
+                <p>América do sul</p>
+            </a>
+            <a href="" alt="">
+                <p>América do norte</p>
+            </a>
+            <a href="" alt="">
+                <p>América central</p>
+            </a>
+            <a href="" alt="">
+                <p>Ásia</p>
+            </a>
+            <a href="" alt="">
+                <p>Europa</p>
+            </a>
+            <a href="" alt="">
+                <p>Oceania</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- ******************************** CARROSEL ******************************** -->
+
+    <div class="slide">
+        <input type="radio" type='color' onchange="changeColor();" name="position" />
+        <input type="radio" type='color' onchange="changeColor();" name="position" checked />
+        <input type="radio" type='color' onchange="changeColor();" name="position" />
+
+        <main id="carousel">
+            <img src="t1.png" alt="" class="item">
+            <img src="t2.png" alt="" class="item">
+            <img src="t3.png" alt="" class="item">
+        </main>
+    </div>
+
+    <!-- ******************************** CONTEUDO EM BAIXO ******************************** -->
+
+    <div>
+        <p class="recomendados">Recomendados:</p>
+    </div>
+
+    <!-- ******************************** LINHA 1 ******************************** -->
+
+    <div class="content">
+        <div class="div_recomendados">
+            <img src="conteudo1.png" alt="" width="200px" height="200px">
+            <div>
+                <p>Páprica Picante</p>
+                <p style="display: inline; color: #76c402; margin: 0;">R$15,50</p>
+                <p style="display: inline; font-size: 11px;">100g</p>
+                <p style="font-size: 16px; font-family: Arial;">Levemente picante, uma <br> especiaria nascida na região
+                    da
+                    <br> América Central e do México.
+                </p>
+            </div>
+        </div>
+        <div class="div_recomendados">
+            <img src="conteudo2.png" alt="" width="200px" height="200px">
+            <div>
+                <p>Chili em Pó</p>
+                <p style="display: inline; color: #76c402; margin: 0;">R$13,50</p>
+                <p style="display: inline; font-size: 11px;">100g</p>
+                <p style="font-size: 16px; font-family: Arial; ">Extremamente picante e <br> muito saborosa. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ******************************** LINHA 2 ******************************** -->
+
+    <div class="content">
+        <div class="div_recomendados">
+            <img src="conteudo1.png" alt="" width="200px" height="200px">
+            <div>
+                <p>Páprica Picante</p>
+                <p style="display: inline; color: #76c402; margin: 0;">R$15,50</p>
+                <p style="display: inline; font-size: 11px;">100g</p>
+                <p style="font-size: 16px; font-family: Arial;">Levemente picante, uma <br> especiaria nascida na região
+                    da
+                    <br> América Central e do México.
+                </p>
+            </div>
+        </div>
+        <div class="div_recomendados">
+            <img src="conteudo2.png" alt="" width="200px" height="200px">
+            <div>
+                <p>Chili em Pó</p>
+                <p style="display: inline; color: #76c402; margin: 0;">R$13,50</p>
+                <p style="display: inline; font-size: 11px;">100g</p>
+                <p style="font-size: 16px; font-family: Arial; ">Extremamente picante e <br> muito saborosa. </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
